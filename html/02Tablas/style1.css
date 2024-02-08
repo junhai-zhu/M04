@@ -1,0 +1,38 @@
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-spacing: 10px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+    background-color: orange;
+}
+
+tr:nth-child(odd) {
+    background-color: dodgerblue;
+}
+tr:first-child{
+   background-color: rgb(246, 255, 0);
+}
+
+tr:nth-child(4){
+    background-color: rgb(5, 129, 57);
+ }
+
+tfoot > tr:first-child {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.2em;
+    color: blueviolet;
+    background-color: rgb(241, 27, 202);
+}
+tr:hover {
+    background-color: #eee;
+}

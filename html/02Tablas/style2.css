@@ -1,13 +1,11 @@
 table {
     width: 80%;
-    border-collapse: collapse;
+    border-collapse: separate;
     border: 2px solid black;
-    border-spacing: 10px;
+    border-spacing: 5px;
 }
 
-table,
-th,
-td {
+thead > tr > th, tbody > tr > td {
     border: 2px solid black;
     padding: 15px;
 }
@@ -20,14 +18,10 @@ th {
 tr:nth-child(even) {
     background-color: dodgerblue;
 }
-tr:nth-child(odd) {
-    background-color: lime;
-}
 tfoot {
     border: none;
     text-decoration: none;
 }
-
 tr:hover {
     background-color: #eee;
 }
