@@ -1,0 +1,31 @@
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-spacing: 10px;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+    background-color: orange;
+}
+
+tr:nth-child(even) {
+    background-color: dodgerblue;
+}
+
+tfoot {
+    border: none;
+    text-decoration: none;
+}
+
+tr:hover {
+    background-color: #eee;
+}
