@@ -1,0 +1,23 @@
+.block1{
+    background-color: orange;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 40px;
+    text-align: center;
+
+}
+.block2{
+    background-color: lightskyblue;   
+    padding: 10px;
+    margin: 10px;
+    border-radius: 40px;
+    text-align: center;
+   }
+.title{
+    color: rgb(255, 0, 85);
+    font-size: small;
+}
+.par{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+}
