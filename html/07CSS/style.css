@@ -1,0 +1,41 @@
+:root {
+    --main-color: red
+}
+
+.red {
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    height: 10vh;
+}
+
+* {
+    color: aqua;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+div[lang] {
+    background-color: blue;
+}
+
+div[lang~="en"] {
+    color: white;
+}
+
+div[lang="ca"] {
+    color: greenyellow;
+}
+
+div[lang="es"] {
+    color: orange;
+}
