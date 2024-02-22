@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Junhai Zhu Formulari</title>
+</head>
+
+<body>
+    <h1><i>INSCRIPCIÓ GRAU SUPERIOR</i></h1>
+    <form id="form1" name="form1" action="#" target="_self" method="get">
+        <fieldset id="fieldset1">
+            <legend>Dades Personals</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="fname">Nom:</label><br>
+                        <input type="text" id="fname" name="fname" required>
+                    </td>
+
+                    <td>
+                        <label for="lname">Cognom:</label><br>
+                        <input type="text" id="lname" name="lname" required>
+                    </td>
+                    <td>
+                        <label for="dni" pattern="[0-9]{8}[A-Z&&[(?!)ilñu]]{1}"></label>DNI</label><br>
+                        <input type="text" id="dni" name="dni" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nlocal">Localitat de Naixement</label><br>
+                        <input type="text" id="nlocal" name="nlocal" placeholder="Enter your address" required>
+                    </td>
+
+                    <td>
+                        <label for="local">Provincia:</label><br>
+                        <select name="local" id="local" required>
+                            <option value="opt0" disabled selected>-- select an option --</option>
+                            <option value="opt1">Barcelona</option>
+                            <option value="opt2">Sevilla</option>
+                            <option value="opt3">Huelva</option>
+                            <option value="opt4">Gerona</option>
+                            <option value="opt5">Tarragona</option>
+                            <option value="opt6">Teruel</option>
+                            <option value="opt7">Murcia</option>
+                            <option value="opt8">Salamanca</option>
+                            <option value="opt9">Zaragoza</option>
+                            <option value="opt10">Jaén</option>
+                        </select>
+                    <td>
+                        <label for="date">Data de Naixement</label><br>
+                        <input type="date" name="date" id="date" min="1900-01-01" max="2023-01-01" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=" 2">
+                        <label for="dir">Direcció</label><br>
+                        <input type="text" id="dir" name="dir" placeholder="Enter your address" size="40" required>
+                    </td>
+
+
+                    <td>
+                        <label for="cd">Codi Postal:</label><br>
+                        <input type="text" pattern="[0-9]{5}" name="cd" id="cd" required>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset id="fieldset2">
+            <legend>Forma d'Acces</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" id="bat" name="acces" value="bat" />
+                        <label for="bat">Batxillerat Modalitat: <input type="text" id="bat" name="bat">
+                        </label><br />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="cou" name="acces" value="cou" />
+                        <label for="cou">COU Opció: <input type="text" id="cou" name="cou">
+                        </label><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="mig" name="acces" value="mig" />
+                        <label for="mig">FP Grau Mig. Cicle: <input type="text" id="mig" name="mig">
+                        </label><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="sup" name="acces" value="sup" />
+                        <label for="sup">FP Grau Superior. Cicle: <input type="text" id="sup" name="sup">
+                        </label><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="altre" name="acces" value="altre" checked />
+                        <label for="altre">Altres (especificar) <input type="text" id="altre" name="altre">
+                        </label><br />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset id="fieldset3">
+            <legend>Documents Adjunts</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="fdni" id="fdni">
+                        <label for="fdni">Fotocopia DNI</label><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <input type="checkbox" name="ca" id="ca">
+                        <label for="ca">Certificat Acadèmic Selecciona document:<input type="file" name="ca" id="sca"
+                                accept="*">
+                        </label><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td><br><br>
+                        <input type="checkbox" name="daltres" id="daltres">
+                        <label for="daltres">Atres documents (especificar):<input type="text" id="daltres"
+                                name="daltres">Selecciona document:<input type="file" name="daltres" id="sdaltres"
+                                accept="*" multiple>
+                        </label><br />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <button type="button" ondblclick="getValues()">ENVIAR SOLICITUD</button>
+    </form>
+</body>
+
+</html>

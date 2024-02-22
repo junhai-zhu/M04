@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    
+</head>
+<body>
+    <h1>Result:</h1>
+    <div id="result"></div>
+    <script>
+        const text = document.getElementById('result');
+        new URLSearchParams(window.location.search).forEach(
+            (value, name) => {
+                text.append(name);
+                text.append(': ');
+                text.append(value);
+                text.append(document.createElement('br'));
+        });
+    </script>
+</body>
+</html>

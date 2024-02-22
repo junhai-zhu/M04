@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form1" name="form1" action="#" target="_self" method="get">
+        <h1>Form:</h1>
+        <fieldset>
+            <legend>First</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" size="50" required maxlength="10" minlength="4">
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Second</legend>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address">
+            <br>
+            <label for="Phone">Phone</label>
+            <input type="text" id="Phone" name="Phone" placeholder="Enter your phone">
+            <br>
+            <label for="desc">Description</label>
+            <br>
+
+            <textarea name="desc" id="desc" cols="50" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Loggin</legend>
+            <label for="user">Username</label>
+            <input type="text" id="user" name="user" placeholder="Enter username" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="female" name="gender" value="female" checked />
+            <label for="female">Female </label><br />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male </label><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other </label><br /><br />
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <label for="check">Check</label>
+            <input type="checkbox" name="check" id="check">
+            <br>
+            <label for="check1">Check1</label>
+            <input type="checkbox" name="check1" id="check1">
+        </fieldset>
+        <fieldset>
+            <legend>Email</legend>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        </fieldset>
+        <fieldset>
+            <legend>Files</legend>
+            <label for="img">Select image</label>
+            <input type="file" name="img" id="img" accept="image/png, image/jpeg" required>
+            <br>
+            <label for="docs">Select docs</label>
+            <input type="file" name="docs" id="docs" accept="docs/pdf" required multiple>
+        </fieldset>
+        <fieldset>
+            <legend>Number</legend>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="18" max="120" required>
+            <br>
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range" min="0" max="100" value="50" step="10">
+        </fieldset>
+        <fieldset>
+            <legend>Pattern</legend>
+            <label for="search">Search: </label><br /><br />
+            <input type="search" id="search" name="q" placeholder="Matricula" pattern="[0-9]{4}[A-z&&[(?!)aeiouñq]]{3}"
+                required />
+            <button>Search</button>
+        </fieldset>
+        <fieldset>
+            <legend>Color</legend>
+            <input type="color" id="head" name="head" value="#f6f4bf" />
+            <label for="head">Head</label>
+        </fieldset>
+        <fieldset>
+            <legend>Cars</legend>
+            <label for="cars"> Select your option:</label>
+            <select name="cars" id="cars">
+                <option value="opt1">Option 1</option>
+                <option value="opt2">Option 2</option>
+                <option value="opt3">Option 3</option>
+                <option value="opt4">Option 4</option>
+            </select><br /><br />
+            <input type="button" name="submit" value="Submit" onclick="checkValues()" />
+            <br>
+            <label for="date">Date</label><br>
+            <input type="date" name="date" id="date" min="2024-02-15" value="2024-02-15">
+        </fieldset>
+        <fieldset>
+            <legend>Datalist</legend>
+            <input list="datalist">
+            <datalist id="datalist">
+                <option value="Red"></option>
+                <option value="Blue"></option>
+                <option value="Green"></option>
+            </datalist>
+        </fieldset>
+        <button type="button" ondblclick="getValues()">Get values</button>
+        <!-- <input type="submit" name="submit" value="SEND"> -->
+        <!-- <input type="reset" name="reset" value="RESET"> -->
+    </form>
+    <p id="values"></p>
+    <script>
+        function getValues(){
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            document.getElementById("values").innerHTML = "First name: "+ fname + "<br> Last name: " + lname;
+        }
+        function checkValues() {
+            const x = document.forms["form"];
+            let text = x.elements["cars"].name + ": " + x.elements["cars"].value;
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+
+</body>
+
+</html>
