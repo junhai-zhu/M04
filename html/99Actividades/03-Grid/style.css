@@ -1,12 +1,107 @@
-.grid {
+#poke-container {
     display: grid;
     place-items: stretch;
     padding: 10px;
     gap: 10px 10px;
-    grid-template: 75px 75px 75px / 125px 125px 125px; 
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+}
+img{
+    width: 100%;
 }
 .item {
     padding: 20px;
     background-color: steelblue;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#pokeNumber::before {
+    font-weight: bold;
+    padding-left: 1vh;
+    content: "Code: ";
+}
+
+#pokeContent {
+    margin:1vh;
+    border-radius: 2%;
+    background: rgb(252, 252, 252);
+    background: radial-gradient(circle, rgba(252, 252, 252, 1) 0%, rgba(166, 166, 150, 1) 100%);
+}
+
+#pokemon {
+    background-color: grey;
+    border-radius: 2%;
+}
+
+#pokeImage {
+    margin:1vh;
+    border-radius: 2%;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 24%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+ul::before {
+    display:inline;
+    font-weight: bold;
+    content: "Type: ";
+}
+ul{
+    list-style-type: none;
+    display: inline;
+
+}
+li{
+    display: inline;
+}
+li:last-child::before{
+    content: "";
+}
+li:first-child::after{
+    content: "";
+}
+
+
+#pokeHeight::before {
+    padding-left: 1vh;
+    font-weight: bold;
+    content: "Height: ";
+}
+#pokeHeight::after {
+    content: "m";
+}
+#pokeHeight{
+    float: inline-start;
+}
+#pokeWeight::before {
+    padding-left: 1vh;
+    font-weight: bold;
+    content: "Weight: ";
+}
+#pokeWeight{
+    float: inline-end;
+}
+#pokeWeight::after {
+    content: "kg ";
+}
+
+
+h4 {
+    padding-top: 2vh;
+    padding-left: 1vh;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-style: oblique;
+}
+#clear::before{
+    content: "\00a0";
 }
