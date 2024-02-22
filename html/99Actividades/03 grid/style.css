@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    place-items: stretch;
+    padding: 10px;
+    gap: 10px 10px;
+    grid-template: 75px 75px 75px / 125px 125px 125px; 
+    grid-template-columns: auto auto auto auto auto;
+}
+.item {
+    padding: 20px;
+    background-color: steelblue;
+}
