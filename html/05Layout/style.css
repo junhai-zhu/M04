@@ -1,0 +1,31 @@
+.holy-grail {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 190, 201);
+}
+
+.holy-grail__main {
+    /* Take the remaining height */
+    flex-grow: 1;
+
+    /* Layout the left sidebar, main content and right sidebar */
+    display: flex;
+    flex-direction: row;
+    background-color:azure; 
+}
+
+.holy-grail__left {
+    width: 50%;
+    background-color:rgb(175, 227, 192);
+}
+
+.holy-grail__middle {
+    /* Take the remaining width */
+    flex-grow: 1;
+    background-color:rgb(164, 229, 241);
+}
+
+.holy-grail__right {
+    width: 50%;
+    background-color:rgb(251, 238, 181);
+}
