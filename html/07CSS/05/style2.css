@@ -1,0 +1,118 @@
+
+@keyframes myAnimation {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transition: all 2s;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+.box:hover {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(204, 32, 32);
+    color: white;
+    transform: translate(100px, 100px);
+
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(237, 100, 191);
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(43, 129, 22);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.example {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.example2 {
+    background: gradient(linear, left top, left bottom, from(#333), to(#EEE));
+    background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#EEE));
+    background: -o-linear-gradient(top, #333 0%, #EEE 100%);
+    background: linear-gradient(top, #333 0%, #EEE 100%);
+}
+
+.input-element {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.page-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.main-sidebar {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+
+.a {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+}
+.b {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+
+  }

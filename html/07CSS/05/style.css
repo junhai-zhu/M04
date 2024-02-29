@@ -3,6 +3,8 @@ body {
 }
 div{
     height: 500px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
 }
 @media only screen and (max-width: 600px) {
@@ -53,3 +55,4 @@ p {
         background-color: blue;
     }
 } 
+
