@@ -10,11 +10,6 @@ img {
     width: 100%;
 }
 
-.item {
-    padding: 20px;
-    background-color: steelblue;
-}
-
 h2 {
     background-color: black;
     color: white;
@@ -25,7 +20,7 @@ h2 {
 
 #pokeNumber::before {
     font-weight: bold;
-    padding-left: 1vh;
+    padding-left: 10px;
     content: "Code: ";
 }
 
@@ -33,7 +28,7 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    margin: 1vh;
+    margin: 10px;
     border-radius: 2%;
     background: rgb(252, 252, 252);
     background: radial-gradient(circle, rgba(252, 252, 252, 1) 0%, rgba(166, 166, 150, 1) 100%);
@@ -119,3 +114,57 @@ h4 {
     font-weight: bold;
     font-style: oblique;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #poke-container {
+        display: grid;
+        place-items: stretch;
+        padding: 10px;
+        gap: 10px 10px;
+        grid-template-columns: auto;
+    }    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #poke-container {
+        display: grid;
+        place-items: stretch;
+        padding: 10px;
+        gap: 10px 10px;
+        grid-template-columns: auto auto ;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #poke-container {
+        display: grid;
+        place-items: stretch;
+        padding: 10px;
+        gap: 10px 10px;
+        grid-template-columns: auto auto auto ;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #poke-container {
+        display: grid;
+        place-items: stretch;
+        padding: 10px;
+        gap: 10px 10px;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #poke-container {
+        display: grid;
+        place-items: stretch;
+        padding: 10px;
+        gap: 10px 10px;
+        grid-template-columns: auto auto auto auto auto;
+    }
+} 
