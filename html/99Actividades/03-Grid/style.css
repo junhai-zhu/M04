@@ -5,9 +5,11 @@
     gap: 10px 10px;
     grid-template-columns: auto auto auto auto;
 }
-img{
+
+img {
     width: 100%;
 }
+
 .item {
     padding: 20px;
     background-color: steelblue;
@@ -28,7 +30,10 @@ h2 {
 }
 
 #pokeContent {
-    margin:1vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: 1vh;
     border-radius: 2%;
     background: rgb(252, 252, 252);
     background: radial-gradient(circle, rgba(252, 252, 252, 1) 0%, rgba(166, 166, 150, 1) 100%);
@@ -40,57 +45,69 @@ h2 {
 }
 
 #pokeImage {
-    margin:1vh;
+    margin: 1vh;
     border-radius: 2%;
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
         radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 24%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
 
+ul {
+    margin-left: 10px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
 ul::before {
-    display:inline;
+    float: inline-start;
+    content: "Type:\00a0";
     font-weight: bold;
-    content: "Type: ";
 }
-ul{
-    list-style-type: none;
-    display: inline;
 
-}
 li{
-    display: inline;
+    float: left;
 }
-li:last-child::before{
-    content: "";
+
+li::after {
+    content: ", \00a0";
 }
-li:first-child::after{
+
+li:last-child::after {
     content: "";
 }
 
+#pokeHeight {
+    margin-left: 10px;
+    float: inline-start;
+}
+
+#pokeWeight {
+    float: inline-end;
+    margin-right: 10px;
+}
 
 #pokeHeight::before {
-    padding-left: 1vh;
-    font-weight: bold;
     content: "Height: ";
+    font-weight: bold;
 }
+
 #pokeHeight::after {
     content: "m";
 }
-#pokeHeight{
-    float: inline-start;
-}
+
 #pokeWeight::before {
-    padding-left: 1vh;
-    font-weight: bold;
     content: "Weight: ";
+    font-weight: bold;
 }
-#pokeWeight{
-    float: inline-end;
-}
+
 #pokeWeight::after {
-    content: "kg ";
+    content: "kg";
 }
 
 
+#clear::before {
+    content: "\00a0";
+}
 h4 {
     padding-top: 2vh;
     padding-left: 1vh;
@@ -101,7 +118,4 @@ h4 {
     text-transform: capitalize;
     font-weight: bold;
     font-style: oblique;
-}
-#clear::before{
-    content: "\00a0";
 }
