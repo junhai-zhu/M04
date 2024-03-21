@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="center">
+        <h1>Register Form</h1>
+        <form action="#">
+            <legend>
+                <h2>Personal Details</h2>
+            </legend>
+            <div id="form"><br><input type="name" name="name" id="name" required placeholder="Enter name">
+                <br>
+                <label for="name">Name</label>
+                <br>
+                <input type="lname" name="lname" id="lname" required placeholder="Enter last name">
+                <br>
+                <label for="lname">Last name</label>
+            </div>
+            <legend>
+                <h2>Address</h2>
+            </legend>
+            <div id="form">
+                <br><input type="address" name="address" id="address" placeholder="Enter your address" required size="40">
+                <br>
+                <label for="address">Number, street, city, door</label>
+                <br>
+                <table>
+                    <tr>
+                        <td><input type="code" name="code" id="code" placeholder="Enter your city" required><br>
+                            <label for="code">Postal code</label>
+                            <br>
+                            <select name="state" id="state">
+                                <option value="1" disabled selected>Select state</option>
+                                <option value="2">State 1</option>
+                                <option value="3">State 2</option>
+                                <option value="4">State 3</option>
+                            </select><br>
+                        </td>
+                        <td><input type="City" name="City" id="City" required>
+                            <br>
+                            <label for="City">City</label>
+                            <br>
+                            <select name="country" id="country">
+                                <option value="1" disabled selected>Select country</option>
+                                <option value="2">Country 1</option>
+                                <option value="3">Country 2</option>
+                                <option value="4">Country 3</option>
+                            </select><br>
+                        </td>
+                    <tr>
+                        <td>
+                            <label for="state">State</label>
+                        </td>
+                        <td>
+                            <label for="country">Country</label>
+                        </td>
+                    </tr>
+                </table>
+                <div id="forms">
+                </div>
+            </div>
+            <legend>
+                <h2>Contact</h2>
+            </legend>
+            <div id="form"><br><input type="email" class="email"
+                    pattern="[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9}" name="email"
+                    id="email" placeholder="Enter email"size="30">
+                <br>
+                <label for="email">email</label>
+                <br>
+    
+                <table>
+                    <tr>
+                        <td><input type="lline" name="lline" id="lline" placeholder="Enter land line">
+                            <br>
+                            <label for="lline">Land line</label>
+                            <br>
+                        <td>
+                            <input type="tel" name="mobile" id="mobile" placeholder="Enter mobile phone">
+                            <br>
+                            <label for="mobile">Mobile</label>
+                            <br>
+                        </td>
+                </table>
+                </div>
+                <br>
+            <div id="form"><input type="checkbox" required name="check" id="check">
+                <label for="check">By clicking the Sign Up button, you acknowledge that you have read and agree our Privacy
+                    Policy.</label>
+            </div>
+            <br>
+            <button type="submit">Register</button>
+            </div>
+            
+        </form>
+    </div>
+    
+
+</body>
+
+</html>
