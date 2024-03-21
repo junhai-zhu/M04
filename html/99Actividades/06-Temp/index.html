@@ -15,11 +15,11 @@
             <img src="img/img1.png" alt="temp">
         </div>
         <div class="container w-80 border-1 border-success shadow-lg p-3 mb-5 bg-body rounded h-100">
-            <fieldset class="border-2 bg-warning p-1">
-                <div class="w-100 h-100">
-                    <div class="col-sm-6">
+            <fieldset class="border-2  p-1">
+                <div class="w-100 h-100 row align-content-center">
+                    <div id="calc" class="col-sm-6 col-xs-12 bg-warning">
                         <fieldset>
-                            <table class="border-0">
+                            <table id="conver" style="margin: auto; margin-top: 5%; margin-bottom: 5%;">
                                 <tr>
                                     <td>
                                         <label for="from">From:</label>
@@ -70,11 +70,14 @@
                             </table>
                         </fieldset>
                     </div>
-                    <div class="col-sm-6">
+                    <div id="calc" class="col-sm-6 col-xs-12 bg-warning">
                         <fieldset>
-                            <h4>Conversion Formulae</h4>
-                            <p>The conversion formulae is as follows:</p>
-                            <div class="text-center" id="formula1">...</div>
+                            <div style="margin-top: 5%; margin-bottom: 5%;">
+                                <h4>Conversion Formulae</h4>
+                                <p>The conversion formulae is as follows:</p>
+                                <div class="text-center" id="formula1">...</div>
+                            </div>
+
                         </fieldset>
                     </div>
                 </div>
@@ -89,7 +92,6 @@
                     <th colspan="2">Formulae</th>
                 </tr>
             </thead>
-            <tbody>
                 <tr>
                     <td>Celsius</td>
                     <td>Fahrenheit</td>
