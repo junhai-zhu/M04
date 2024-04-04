@@ -1,0 +1,18 @@
+
+table>tbody>td{
+    background-color: lightskyblue;
+}
+.img{
+    width: 10vw;
+}
+button{
+    border-radius: 10px;
+    background-color: #4c7aaf;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
